@@ -24,7 +24,7 @@ Usage
 ## `npms-add name code...`
 Add the script-code as `name` in the closest package.json scripts. If already defined, confirm overwriting.
 
-## `npms-rm name scripts...`
+## `npms-rm name`
 Delete the specified script `name` in the closest package.json scripts.
 
 License
