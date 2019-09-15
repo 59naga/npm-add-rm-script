@@ -1,0 +1,51 @@
+{
+  "name": "@59naga/npm-add-rm-script",
+  "description": "CLI: customize your npm-scripts in package.json.",
+  "version": "0.0.0",
+  "main": "./lib",
+  "bin": {
+    "npms-add": "npms-add",
+    "npms-rm": "npms-rm"
+  },
+  "files": [
+    "lib",
+    "npms-add",
+    "npms-rm"
+  ],
+  "scripts": {
+    "start": "npm run test -- --watch '{src,test}/**/*.ts'",
+    "test": "mocha --watch-extensions ts -w --require espower-typescript/guess test/**/*.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "pkg-up": "^3.1.0",
+    "prompts": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.5",
+    "@types/prompts": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "espower-typescript": "^9.0.2",
+    "mocha": "^6.2.0",
+    "power-assert": "^1.6.1",
+    "prettier": "^1.18.2",
+    "shell-quote": "^1.7.2",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.6.3"
+  },
+  "author": "59naga",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/59naga/npm-add-rm-script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/59naga/npm-add-rm-script/issues"
+  },
+  "homepage": "https://github.com/59naga/npm-add-rm-script#readme"
+}

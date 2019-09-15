@@ -1,0 +1,16 @@
+sudo: false
+cache: yarn
+branches:
+  except:
+    - /^v[0-9]/
+
+language: node_js
+node_js:
+  - 10
+deploy:
+  provider: npm
+  email: i59naga@icloud.com
+  api_key:
+    secure: Q15HXemnVX17FiU7lsYEJtGlo4NutVebONJrov+rxvukkEu4B+fPSsSSiwMKR1UKH/bX6VENBRsC3bpUqzXcjF3dZoBBdE9n4tA8BGxhb9ffobNF5BsWDv1a+vSG/qPPehmXGHERGZch/zYgI3rGq0wS/s1MQobiFUrKWk+zvZ2UXesTFZfaoVNBIi2tjxg2gYm4uG+TVgjaagrOi5t84Dj8tQD1u026bSVrAi2V7tjBjqwbREp7wkn+Q1MuQdQkzlxhyYl7gCFXe/Wl/ds3B7gFZgO9dDS21/5aAtSd9vrHETWq3bX6xmIuSNzgj3nH4Qf+2hsVSwc5z5cKTzNi3cdnr2QdVerT90QFgfAf5NAsEfqaeEM/QNOi7YhL7EK9oGBulwcUq0hUvoiMlON7Qwl7jhkUALhwSc5KKWyJEyCsU/LYVBwuKRIEeYoTBa1JYDznrULBRa09X1ZxQCgt64RSO5sbH0TVZJuqwiASfHJNFdefGgL8S0YCVXMOwgc4Ki1mIyJPVw7IYUVu+KFBjPj25H1pVVSCWTGdFvSwYHsUFWZ+mo8pl3KWx/Wj6ZNq5SIbVcwatEdCD1Hgv9cvDUGb2kIajPi1QuckBp7vGk1ETIe3X/1LAFB0r3ctFkaeq2XRnt8hZ201m2ZT1V6G6fb9CNPKDLPo/ghoyb/52X8=
+  on:
+    repo: 59naga/npm-add-rm-script
