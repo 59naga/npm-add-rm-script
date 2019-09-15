@@ -7,7 +7,10 @@ branches:
 language: node_js
 node_js:
   - 10
+before_deploy:
+  - yarn build
 deploy:
+  skip_cleanup: true
   provider: npm
   email: i59naga@icloud.com
   api_key:
