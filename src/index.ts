@@ -79,10 +79,16 @@ export async function ADD(argv: string[], options: Options = {}): Promise<void> 
   const [name, ...chunks] = argv;
   const script = chunks.join(' ');
   if (!name) {
+    if (options.silent) {
+      return;
+    }
     console.log(`‼️  Required the name of the script`);
     return;
   }
   if (!script.length) {
+    if (options.silent) {
+      return;
+    }
     console.log(`‼️  Required the code of the script`);
     return;
   }
@@ -107,6 +113,9 @@ export async function REMOVE(argv: string[], options: Options = {}): Promise<voi
   const [name, ...chunks] = argv;
   const script = chunks.join(' ');
   if (!name) {
+    if (options.silent) {
+      return;
+    }
     console.log(`‼️  Required the name of the script`);
     return;
   }
@@ -119,7 +128,6 @@ export async function REMOVE(argv: string[], options: Options = {}): Promise<voi
     if (options.silent) {
       return;
     }
-
     if (original.length) {
       console.log(`➖  Removed ${name} script that was originally "${original}"`);
     } else {
