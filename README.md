@@ -2,8 +2,8 @@ npm-add-rm-script
 ---
 
 <p align="right">
-  <a href="https://www.npmjs.com/package/npm-add-rm-script">
-    <img alt="Npm version" src="https://badge.fury.io/js/npm-add-rm-script.svg">
+  <a href="https://www.npmjs.com/package/@59naga/npm-add-rm-script">
+    <img alt="Npm version" src="https://badge.fury.io/js/%4059naga%2Fnpm-add-rm-script.svg">
   </a>
   <a href="https://travis-ci.org/59naga/npm-add-rm-script">
     <img alt="Build Status" src="https://travis-ci.org/59naga/npm-add-rm-script.svg?branch=master">
